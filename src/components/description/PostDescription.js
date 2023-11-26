@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSavedStatus } from "../../features/blogs/blogsSlice";
 const PostDescription = ({ blog }) => {
-  const { id, title, description, image, tags, likes, isSaved, createdAt } =
-    blog;
+  const { id, title, description, image, tags, likes, isSaved } = blog;
 
   const dispatch = useDispatch();
 
